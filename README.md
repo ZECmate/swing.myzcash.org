@@ -1,2 +1,2 @@
-# zeltrez.io
-Website for Zeltrez
+# swing.myzcash.org
+Website is dedicated to Zcash Swing Wallet.
