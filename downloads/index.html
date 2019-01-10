@@ -230,7 +230,6 @@
         <br>
         <h4 class="fw2 f6 tracked white-100 mt4"> GPG Fingerprint:</h4>
         <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">4F7F EBBF 1BDD D239 7DAB E2CF 4B69 CA27 A986 265D</h4>
-        <br>
         <h4 class="fw2 f6 tracked white-100 mt4"> Authority:</h4>
         <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">Zel Technologies GmbH (TD7JHAFH65)</h4>
 
@@ -255,7 +254,6 @@
         <br>
         <h4 class="fw2 f6 tracked white-100 mt4"> GPG Fingerprint:</h4>
         <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">4F7F EBBF 1BDD D239 7DAB E2CF 4B69 CA27 A986 265D</h4>
-        <br>
         <h4 class="fw2 f6 tracked white-100 mt4"> Authority:</h4>
         <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">Zel Technologies GmbH (TD7JHAFH65)</h4>
 
@@ -263,9 +261,10 @@
 
     </div>
     <script>
-      // Get the modal
+      // Get the modal OK now it needs cleaning :D
       var modal100 = document.getElementById('shaModal100');
       var modal101 = document.getElementById('shaModal101');
+      var modal110 = document.getElementById('shaModal110');
 
       // Get the button that opens the modal
       var btn = document.getElementById("sha");
@@ -277,6 +276,7 @@
       function closeModal() {
         modal100.style.display = "none";
         modal101.style.display = "none";
+        modal110.style.display = "none";
       }
 
       // When the user clicks on <span> (x), close the modal
@@ -285,14 +285,17 @@
           modal100.style.display = "block";
         } else if (version == 101) {
           modal101.style.display = "block";
+        } else if (version == 110) {
+          modal110.style.display = "block";
         }
       }
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function (event) {
-        if (event.target == modal100 || event.target == modal101) {
+        if (event.target == modal100 || event.target == modal101 || event.target == modal110) {
           modal100.style.display = "none";
           modal101.style.display = "none";
+          modal110.style.display = "none";
         }
       }
     </script>
