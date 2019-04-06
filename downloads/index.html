@@ -34,8 +34,8 @@
   <div class="vh-100 w-100 white">
 
     <div class="downloads w-100 pt5 pt6-l pa3 center tc">
-      <h3 class="code fw2 ttu tracked f3 mb0">1.2.2</h3>
-      <h4 class="fw2 ttu tracked f7 mb0 white-50">Last Updated: March 23rd, 2019
+      <h3 class="code fw2 ttu tracked f3 mb0">1.3.0</h3>
+      <h4 class="fw2 ttu tracked f7 mb0 white-50">Last Updated: April 6th, 2019
         </h3>
 
         <div class="flex-none flex-m flex-l flex-wrap justify-center mw8 center">
@@ -47,7 +47,7 @@
                 <div class="f5 white-60">For 64-bit Windows 7+</div>
               </div>
               <div class="card__cell pa4">
-                <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="https://github.com/ZECmate/ZECmate-swing-wallet/releases/download/v1.2.2/ZECmate-1.2.2.exe">
+                <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="https://github.com/ZECmate/ZECmate-swing-wallet/releases/download/v1.3.0/ZECmate-1.3.0.exe">
                   <svg class="v-mid mr1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><title>Download
                       Icon
                     </title>
@@ -68,7 +68,7 @@
                 <div class="f5 white-60">For MacOS 10.9+</div>
               </div>
               <div class="card__cell pa4">
-                <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="https://github.com/ZECmate/ZECmate-swing-wallet/releases/download/v1.2.2/ZECmate-1.2.2.dmg">
+                <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="https://github.com/ZECmate/ZECmate-swing-wallet/releases/download/v1.3.0/ZECmate-1.3.0.dmg">
                   <svg class="v-mid mr1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><title>Download
                       Icon
                     </title>
@@ -89,7 +89,7 @@
                 <div class="f5 white-60">.deb</div>
               </div>
               <div class="card__cell pa4">
-                <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="https://github.com/ZECmate/ZECmate-swing-wallet/releases/download/v1.2.2/ZECmate-1.2.2.deb">
+                <a class="card__cell__button link bg-white blue hover-bg-blue hover-white bg-animate db fw6 f5 br2 pa3" href="https://github.com/ZECmate/ZECmate-swing-wallet/releases/download/v1.3.0/ZECmate-1.3.0.deb">
                   <svg class="v-mid mr1" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><title>Download
                       Icon
                     </title>
@@ -102,6 +102,22 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="mw7 center mt5 mb5 tl">
+
+          <h4 class="fw2 ttu tracked f7 mb0 white-70">1.3.0 Release Notes</h4>
+          <a onclick="openModal(130)" id="sha" style="cursor:pointer" class="link dib f7 f6-l mr3 mr4-l white-50 hover-white-90 ttu tracked-mega fw3">Show
+            calculated SHA256</a>
+          <p>Info</p>
+          <ul class="list white-70 fw2 pl0">
+            <li class="mb2">Version 1.3.0</li>
+          </ul>
+          <p>Features</p>
+          <ul class="list white-70 fw2 pl0">
+            <li class="mb2">- Latest Zcash 2.0.4 binaries</li>
+            <li class="mb2">- Adds a posibility to natively encrypt your wallet using daemons built in experimental encryption!</li>
+          </ul>
         </div>
 
         <div class="mw7 center mt5 mb5 tl">
@@ -219,7 +235,7 @@
         </div>
 
         <div class="w-100 tc db footer mt6 bottom-2 pb6">
-          <h4 class="fw3 white-50">© <span id="year">2018</span> Zel Technologies. All rights reserved.</h4>
+          <h4 class="fw3 white-50">© <span id="year">2019</span> Zel Technologies. All rights reserved.</h4>
           <a class="link" href="https://zel.cash" target="_blank" rel="noopener noreferrer">
             <img class="mw4" src="../img/zelcash-logo-text-light.svg" alt="Zelcash logo">
           </a>
@@ -347,6 +363,30 @@
       </div>
 
     </div>
+    
+    <div id="shaModal30" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <h4 class="fw3 f5 white-100 mt4">All ZECmate Swing Wallet releases are signed by Zel Technologies
+          GmbH. Furthermore we provide calculated SHA256 hashes of our releases</h4>
+
+        <h4 class="fw2 f6 tracked white-100 mt4"> ZECmate-1.3.0.exe</h6>
+        <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">db4c96fed7ab9110c4d641a65354adbbe7c3a0290d015af217864a3423fa8261</h4>
+        <h4 class="fw2 f6 tracked white-100 mt4"> ZECmate-1.3.0.dmg</h6>
+        <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">17f6c102db5f9661d781211e5461f80b0478591d197643373b7ec5abf930bdb1</h4>
+        <h4 class="fw2 f6 tracked white-100 mt4"> ZECmate-1.3.0.deb</h4>
+        <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">aa5628bfe1478521db8a711e49f24ed0fcd8715fe5ee291442732ea3bb9a2a2a</h4>
+        <br>
+        <h4 class="fw2 f6 tracked white-100 mt4"> GPG Fingerprint:</h4>
+        <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">4F7F EBBF 1BDD D239 7DAB E2CF 4B69 CA27 A986 265D</h4>
+        <h4 class="fw2 f6 tracked white-100 mt4"> Authority:</h4>
+        <h4 class="shahash fw2 ttu tracked f7 mb0 white-100">Zel Technologies GmbH (TD7JHAFH65)</h4>
+
+      </div>
+
+    </div>
     <script>
       // Get the modal OK now it needs cleaning :D
       var modal100 = document.getElementById('shaModal100');
@@ -354,6 +394,7 @@
       var modal110 = document.getElementById('shaModal110');
       var modal120 = document.getElementById('shaModal20');
       var modal122 = document.getElementById('shaModal22');
+      var modal130 = document.getElementById('shaModal30');
 
       // Get the button that opens the modal
       var btn = document.getElementById("sha");
@@ -368,6 +409,7 @@
         modal110.style.display = "none";
         modal120.style.display = "none";
         modal122.style.display = "none";
+        modal130.style.display = "none";
       }
 
       // When the user clicks on <span> (x), close the modal
@@ -382,17 +424,20 @@
           modal120.style.display = "block";
         } else if (version == 122) {
           modal122.style.display = "block";
+        } else if (version == 130) {
+          modal130.style.display = "block";
         }
       }
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function (event) {
-        if (event.target == modal100 || event.target == modal101 || event.target == modal110 || event.target == modal120 || event.target == modal122) {
+        if (event.target == modal100 || event.target == modal101 || event.target == modal110 || event.target == modal120 || event.target == modal122 || event.target == modal130) {
           modal100.style.display = "none";
           modal101.style.display = "none";
           modal110.style.display = "none";
           modal120.style.display = "none";
           modal122.style.display = "none";
+          modal130.style.display = "none";
         }
       }
     </script>
