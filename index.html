@@ -36,8 +36,11 @@
   <div class="vh-100 w-100 white">
     <div class="w-100 pt6 pa3 mw6 center tc">
       <img src="img/zecmate-logo.png" class="w-60">
-      <h3 class="fw3 f4 tracked-mega ttu white-70 mt4">ZECmate Swing Wallet</h3>
-      <h3 class="fw3 f6 tracked-mega ttu white-70 mt4">Your best mate for Zcash</h3>
+      <h2 class="fw8 f3 tracked-mega ttu white-70 mt4">ZECmate Swing Wallet</h2>
+      <h3 class="fw5 f5 tracked-mega ttu white-70 mt4">Your best mate for Zcash</h3>
+    </div>
+    <div class="w-30 center tc">
+      <a href="https://zel.network" target="_blank"><img src="img/providedbyZel.png" alt="provided by Zel Tech"></a>
     </div>
 
     <!-- Windows -->
@@ -70,11 +73,16 @@
     <div id="about" class="mw9 center">
       <div class="flex-none flex-l items-center justify-between mt5 mt6-ns">
         <div class="w-100 pa5 pa4-l pb0 v-mid pl5-l">
-          <img class="shadow-5" src="img/mainscreen.png" alt="Zcash Swing Wallet">
+          <img  id="myImg" class="shadow-5" src="img/v140/mainscreen.png" alt="Zcash Swing Wallet">
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
         <div class="w-100 pa5 pt0 pb2 pa3-l pr4-l">
-          <h3 class="f3 fw5 mb1">ZECmate Swing Wallet</h3>
-          <p class="white-70 fw3 f4 measure">ZECmate Swing Wallet is a full node wallet for <a href="https://z.cash" class="mylink">Zcash</a> cryptocurrency. ZECmate Swing Wallet is a port of HoriZEN Swing wallet offering friendly UI
+          <h3 class="f2 fw5 mb1">ZECmate Swing Wallet<br>Windows/Linux/MacOS</h3>
+          <p class="white-70 fw3 f4 measure">ZECmate Swing Wallet is a full node wallet for <a href="https://z.cash" class="mylink">Zcash</a> cryptocurrency with no transaction fees. ZECmate Swing Wallet is a port of HoriZEN Swing wallet offering friendly UI
             to Zcash users accross all platforms - Windows, Linux and macOS. Speak and Transact freely with the best privacy technology that exists!
           </p>
         </div>
@@ -82,33 +90,67 @@
 
       <div class="flex-none flex-l items-center justify-between mt0 mt5-l">
         <div class="w-100 w-80-l pa5 pt0 pb0 pa3-l pl6-l">
-          <h3 class="f3 fw5">100% opensource signed software</h3>
-          <p class="white-70 fw3 f4 measure"> ZECmate Swing wallet is fully opensourced software and can be easily built following the instructions on <a class="mylink" href="https://github.com/ZECmate/ZECmate-swing-wallet">GitHub</a>. Each of our releases is properly signed by Zel Technologies for every platform to give users the assurance of software quality.
+          <h3 class="f2 fw5">100% open source, signed software</h3>
+          <p class="white-70 fw3 f4 measure"> ZECmate Swing wallet is fully open-sourced software and can be easily built from source following the instructions on <a class="mylink" href="https://github.com/ZECmate/ZECmate-swing-wallet">GitHub</a>. Each of our releases are properly signed by Zel Technologies for every platform to give users the assurance of software quality.
           Furthermore we are guaranteeing the updates and support for each new Zcash release to give users the best experience while interacting with Zcash blockchain.</p>
         </div>
         <div class="w-80 pa4 v-mid dn db-l pr5-l">
-          <img class="shadow-5" src="img/transactions.png" alt="Transactions table">
+          <img id="myImg" class="shadow-5" src="img/v140/customUI.png" alt="theme palette">
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
       </div>
 
       <div class="flex-none flex-l items-center justify-between mt0 mt5-l">
         <div class="w-100 pa5 pa4-l pb0 v-mid pl5-l">
-          <img class="shadow-5" src="img/broadcast.png" alt="Create new transaction">
+          <img id ="myImg" class="shadow-5" src="img/v140/sproutToSaplingWindow.png" alt="sprout to sapling migration tool">
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
         </div>
         <div class="w-100 pa5 pt0 pb2 pa3-l pr4-l">
-          <h3 class="f3 fw5 mb1">The power of full node.</h3>
-          <p class="white-70 fw3 f4 measure">The security of your wallet is completely in your hands. No need for third party servers, private keys always in your possession. With the entire blockchain and proving keys, the construction of 
-            private untraceable tarnsaction has never been easier! Furthermore ZECmate is the only wallet featuring native Zcash encryption! </p>
+          <h3 class="f2 fw5 mb1">The power of full node</h3>
+          <p class="white-70 fw3 f3 measure">
+            - <b>Native Zcash wallet encryption</b> - Protect your wallet.dat file<br><br>
+            - <b>Sprout-to-Sapling migration tool built in</b><br><br>
+            - No 3rd party servers - Private keys always in your possession<br><br>
+            - Easy construction of private, untraceable transactions<br>
+          </p>
         </div>
       </div>
 
       <div class="flex-none flex-l items-center justify-between mt0 mt5-l">
-        <div class="w-100 w-80-l pa5 pt0 pb0 pa3-l pl6-l">
-          <h3 class="f3 fw5">Built-in messenger</h3>
-          <p class="white-70 fw3 f4 measure">Our users can utilise built-in Messanger to send truly encrypted messages utilising zk-snarks protocol. Connect with your friends without a sniffing eye!</p>
+        <div class="w-100 pa5 pa4-l pb0 v-mid pl5-l">
+          <h3 class="f2 fw5">Built-in private messenger</h3>
+          <p class="white-70 fw3 f4 measure">Offers built-in Messanger to send truly encrypted messages utilising zk-snarks protocol. Connect with your friends without a sniffing eye!</p>
         </div>
         <div class="w-80 pa4 v-mid dn db-l pr5-l">
-          <img class="shadow-5" src="img/messenger.png" alt="Zcash Messenger">
+          <img id="myImg" class="shadow-5" src="img/messenger.png" alt="Zcash Messenger">
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>   
+      </div>
+
+    <div class="flex-none flex-l items-center justify-between mt0 mt5-l">
+        <div class="w-100 pa5 pa4-l pb0 v-mid pl5-l">
+          <img id="myImg" class="shadow-5" src="img/v140/themes.GIF" alt="rotating themes example">
+        </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <div class="w-80 pa4 v-mid dn db-l pr5-l">
+          <h3 class="f2 fw5 mb1">UI Customization tools</h3>
+          <p class="white-70 fw3 f4 measure">Customize the color palette of your Zcash full node wallet, or use a provided template</p>
         </div>
       </div>
     </div>
@@ -181,15 +223,39 @@
       </div>
 
     </div>
-
-    <div class="w-100 tc db footer mt6 bottom-2 pb6">
-      <h4 class="fw3 white-50">© <span id="year">2019</span> Zel Technologies. All rights reserved.</h4>
-      <a class="link" href="https://zel.cash" target="_blank" rel="noopener noreferrer">
-        <img class="mw4" src="img/zelcash-logo-text-light.svg" alt="Zelcash logo">
-      </a>
+    
+    <div class="w-40 center tc white-50 footer bottom-2 db mt6 pb6">
+      <a href="https://zel.network" target="_blank"><img src="img/zelComposite.png" alt="provided by Zel Tech"></a>
+      <div class="w-100 tc">
+        <h4 class="fw3">© <span id="year">2019</span> Zel Technologies. All rights reserved.</h4>
+        </a>
+      </div>
     </div>
 
   </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+  </script>
 
   <script type="text/javascript">
     // get current year
